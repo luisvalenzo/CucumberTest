@@ -14,12 +14,12 @@ public class Tools {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void WaitToBeClicked(WebElement object, int sec) {
+	public void wait_to_be_clicked(WebElement object, int sec) {
 		WebDriverWait wait = new WebDriverWait(driver, sec);
 		wait.until(ExpectedConditions.elementToBeClickable(object));
 	}
 
-	public void WaitToBeSelected(WebElement object, int sec) {
+	public void wait_to_be_selected(WebElement object, int sec) {
 		WebDriverWait wait = new WebDriverWait(driver, sec);
 		wait.until(ExpectedConditions.elementToBeSelected(object));
 	}

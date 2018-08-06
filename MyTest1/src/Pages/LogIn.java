@@ -9,9 +9,9 @@ public class LogIn {
 	WebDriver driver;
 
 	@FindBy(name = "login.username")
-	WebElement userTxtBox;
+	WebElement usertxtbox;
 	@FindBy(name = "login.password")
-	WebElement pwdTxtBox;
+	WebElement pwdtxtbox;
 	@FindBy(css = "#login-page > p:nth-child(5) > button.btn.btn-lg.btn-primary.button-login")
 	WebElement LogInBtn;
 	@FindBy(className = "btn btn-lg btn-default button-cancel")
@@ -22,9 +22,9 @@ public class LogIn {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void EnterCredentials(String user, String pwd) {
-		userTxtBox.sendKeys(user);
-		pwdTxtBox.sendKeys(pwd);
+	public void enter_credentials(String user, String pwd) {
+		usertxtbox.sendKeys(user);
+		pwdtxtbox.sendKeys(pwd);
 		LogInBtn.click();
 	}
 }

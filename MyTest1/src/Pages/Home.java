@@ -11,17 +11,17 @@ public class Home {
 	WebDriver driver;
 
 	@FindBy(xpath = "//*[@id=\"welcome-page\"]/p[3]/button")
-	WebElement LoginBtn;
+	WebElement loginbtn;
 
 	public Home(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
-	public void LoginClick() {
+	public void login_click() {
 		Tools t = new Tools(driver);
-		t.WaitToBeClicked(LoginBtn, 3);
-		LoginBtn.click();
+		t.wait_to_be_clicked(loginbtn, 3);
+		loginbtn.click();
 	}
 
 }

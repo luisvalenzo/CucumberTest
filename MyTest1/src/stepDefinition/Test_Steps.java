@@ -15,7 +15,7 @@ public class Test_Steps {
 	WebDriver driver;
 
 	@Given("^User is on Home Page$")
-	public void User_is_on_HomePage() {
+	public void user_is_on_homepage() {
 		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver_win32_latest\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -24,19 +24,19 @@ public class Test_Steps {
 	}
 
 	@When("^User Navigate to LogIn Page$")
-	public void User_navigates_to_LogInPage() {
+	public void user_navigates_to_loginpage() {
 		Home home = new Home(driver);
-		home.LoginClick();
+		home.login_click();
 	}
 
 	@When("^User enters UserName and Password$")
-	public void user_enters_UserName_and_Password() {
+	public void user_enters_username_and_password() {
 		LogIn login = new LogIn(driver);
-		login.EnterCredentials("testuser@example.com", "test123");
+		login.enter_credentials("testuser@example.com", "test123");
 	}
 
 	@Then("^Message displayed Login Successfully$")
-	public void message_displayed_Login_Successfully() throws Throwable {
+	public void message_displayed_login_successfully() throws Throwable {
 		System.out.println("Login Successfully");
 		driver.close();
 	}
