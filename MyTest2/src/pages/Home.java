@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class Home {
 	WebDriver driver;
 
-	@FindBy(xpath = "//*[@id=\"welcome-page\"]/p[3]/button")
+	@FindBy(xpath = "//*[@id=\"welcome-page\"]//button")
 	WebElement LoginBtn;
 
 	public Home(WebDriver driver) {
