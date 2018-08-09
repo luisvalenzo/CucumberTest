@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\u56996\AppData\Local\Temp\testng-eclipse-1247283138\testng-customsuite.xml</span>
+                    <span>C:\Users\u56996\AppData\Local\Temp\testng-eclipse--1771070520\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.Test1" hash-for-method="MyTest">MyTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.Test1" hash-for-method="MyTest(testuser@example.com, test123)">MyTest(testuser@example.com, test123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -125,9 +125,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="MyTest">
-                  </a> <!-- MyTest -->
+                  <a name="MyTest(testuser@example.com, test123)">
+                  </a> <!-- MyTest(testuser@example.com, test123) -->
                   <span class="method-name">MyTest</span>
+                  <span class="parameters">(testuser@example.com, test123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,13 +136,15 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\u56996\AppData\Local\Temp\testng-eclipse-1247283138\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\u56996\AppData\Local\Temp\testng-eclipse--1771070520\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
+  &lt;parameter name=&quot;sUsername&quot; value=&quot;testuser@example.com&quot;/&gt;
+  &lt;parameter name=&quot;sPassword&quot; value=&quot;test123&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.Test1&quot;/&gt;
@@ -188,12 +191,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'MyTest')
 data.setCell(0, 2, 'tests.Test1')
-data.setCell(0, 3, 478);
+data.setCell(0, 3, 480);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 478 ms</span>
+              <span class="suite-total-time">Total running time: 480 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -225,12 +228,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">MyTest</span>
-                <span class="method-start">7417 ms</span>
+                <span class="method-name">MyTest(testuser@example.com, test123)</span>
+                <span class="method-start">6205 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">7900 ms</span>
+                <span class="method-start">6689 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

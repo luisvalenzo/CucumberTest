@@ -2,20 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7903" started-at="2018-08-06T00:05:56Z" finished-at="2018-08-06T00:06:04Z">
+  <suite name="Default suite" duration-ms="6692" started-at="2018-08-09T21:36:01Z" finished-at="2018-08-09T21:36:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7903" started-at="2018-08-06T00:05:56Z" finished-at="2018-08-06T00:06:04Z">
+    <test name="Default test" duration-ms="6692" started-at="2018-08-09T21:36:01Z" finished-at="2018-08-09T21:36:07Z">
       <class name="tests.Test1">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.Test1@724af044]" name="beforeTest" is-config="true" duration-ms="7391" started-at="2018-08-06T00:05:56Z" finished-at="2018-08-06T00:06:04Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.Test1@c038203]" name="beforeTest" is-config="true" duration-ms="6182" started-at="2018-08-09T21:36:01Z" finished-at="2018-08-09T21:36:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="MyTest()[pri:0, instance:tests.Test1@724af044]" name="MyTest" duration-ms="478" started-at="2018-08-06T00:06:04Z" finished-at="2018-08-06T00:06:04Z">
+        <test-method status="PASS" signature="MyTest(java.lang.String, java.lang.String)[pri:0, instance:tests.Test1@c038203]" name="MyTest" duration-ms="480" started-at="2018-08-09T21:36:07Z" finished-at="2018-08-09T21:36:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser@example.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MyTest -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.Test1@724af044]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-08-06T00:06:04Z" finished-at="2018-08-06T00:06:04Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.Test1@c038203]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-08-09T21:36:07Z" finished-at="2018-08-09T21:36:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
