@@ -5,7 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LogIn {
+import utilities.BasePage;
+
+public class LogIn{
 	WebDriver driver;
 
 	@FindBy(name = "login.username")
@@ -16,15 +18,21 @@ public class LogIn {
 	WebElement LogInBtn;
 	@FindBy(className = "btn btn-lg btn-default button-cancel")
 	WebElement CancelBtn;
+	@FindBy(id="login-error-message")
+	WebElement errMsg;
 
 	public LogIn(WebDriver driver) {
 		this.driver = driver;
-		PageFactory.initElements(driver, this);
+		//PageFactory.initElements(driver, this);
 	}
 
 	public void EnterCredentials(String user, String pwd) {
 		userTxtBox.sendKeys(user);
 		pwdTxtBox.sendKeys(pwd);
 		LogInBtn.click();
+	}
+	
+	public boolean ValidateErrorMsg() {
+		return errMsg.isDisplayed();
 	}
 }

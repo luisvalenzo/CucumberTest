@@ -8,19 +8,20 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Tools {
 	WebDriver driver;
-
+	WebDriverWait wait;
+	
 	public Tools(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
-	public void WaitToBeClicked(WebElement object, int sec) {
-		WebDriverWait wait = new WebDriverWait(driver, sec);
+	public void WaitToBeClicked(WebElement object) {
+		wait = new WebDriverWait(driver, 5);
 		wait.until(ExpectedConditions.elementToBeClickable(object));
 	}
 
-	public void WaitToBeSelected(WebElement object, int sec) {
-		WebDriverWait wait = new WebDriverWait(driver, sec);
+	public void WaitToBeSelected(WebElement object) {
+		wait = new WebDriverWait(driver, 5);
 		wait.until(ExpectedConditions.elementToBeSelected(object));
 	}
 }
